@@ -31,7 +31,8 @@ public class FormatDate {
         }
         // return (h < 10 ? "0" + h : h) + "时" + (d < 10 ? "0" + d : d) + "分"  
         //        + (s < 10 ? "0" + s : s) + "秒";
-        return hour + "小时" + minute + "分钟"
-                + second + "秒";
+        return (hour > 0 ? hour + "小时" : "") + (minute > 0 ? minute + "分钟" : "") + second + "秒";
+//         return hour + "小时" + minute + "分钟"
+//                 + second + "秒";
     }
 }
